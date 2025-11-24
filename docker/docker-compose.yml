@@ -1,0 +1,9 @@
+name: sencore
+services:
+  streamlit:
+    build: .
+    image: sencore:latest
+    ports:
+      - "8501:8501"
+    container_name: SENCORE
+    restart: always
